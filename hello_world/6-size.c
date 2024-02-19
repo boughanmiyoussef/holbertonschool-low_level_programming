@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - size
  *
  * description - size
  *
- * return: always 0 (success)
+ * Return: always 0 (success)
  */
 int main(void)
 {
