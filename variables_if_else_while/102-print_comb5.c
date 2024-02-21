@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void) 
+int main(void)
 {
 int num1_10, num1_1, num2_10, num2_1;
 for (num1_10 = 0; num1_10 <= 9; num1_10++)
@@ -33,5 +33,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return 0;
+return (0);
 }
