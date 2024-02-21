@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * 
  * main - Entry point
- * 
- * description - 'reverse alphabet' 
- * 
- * Return: always success 
-*/
+ *
+ * Description: 'reverse alphabet '
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int tehbahpla;
-for (tehbahpla = 'z' ; tehbahpla >= 'a' ; tehbahpla--){
+for (tehbahpla = 'z' ; tehbahpla >= 'a' ; tehbahpla--)
+{
 putchar (tehbahpla);
 }
 putchar('\n');
