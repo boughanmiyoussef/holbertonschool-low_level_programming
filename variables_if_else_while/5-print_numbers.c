@@ -15,6 +15,6 @@ for (digit = 1; digit < 10; digit++)
 {
 printf("%d", digit);
 }
-printf('\n');
+printf("\n");
 return (0);
 }
