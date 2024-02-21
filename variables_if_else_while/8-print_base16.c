@@ -13,7 +13,7 @@ int nmbr;
 int ltr;
 for (nmbr = 0; nmbr < 10 ; nmbr++)
 {
-putchar(nmbr);    
+putchar(nmbr + '0');    
 }
 for (ltr = 'a'; ltr < 'g'; ltr++)
 {
