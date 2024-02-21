@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - entry point
+ * main - Entry point
  *
- * description - 'numbers'
+ * Description: 'numbers '
  *
- * Return: always success 0
- *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
