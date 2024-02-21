@@ -1,12 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - Entry Point
- * 
- * description: 'print combo'
- * 
- * Return: Always success 0 
-*/
+ * main - Entry point
+ *
+ * Description: 'print combo '
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int nbr;
