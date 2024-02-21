@@ -1,3 +1,12 @@
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: 'print combo '
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void) 
 {
 int num1_10, num1_1, num2_10, num2_1;
