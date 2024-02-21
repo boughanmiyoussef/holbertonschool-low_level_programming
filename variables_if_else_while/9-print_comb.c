@@ -12,7 +12,8 @@ int main(void)
 int nbr;
 for (nbr = 0; nbr < 10; nbr++){
 putchar(nbr + '0');
-if(nbr < 9){
+if(nbr < 9)
+{
 putchar(',');
 putchar(' ');
 }
