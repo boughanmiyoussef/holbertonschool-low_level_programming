@@ -11,7 +11,7 @@
 int main(void)
 {
 int tehbahpla;
-for (tehbahpla = 'z' ; tehbahpla <= 'a' ; tehbahpla--){
+for (tehbahpla = 'z' ; tehbahpla >= 'a' ; tehbahpla--){
 putchar (tehbahpla);
 }
 putchar('\n');
