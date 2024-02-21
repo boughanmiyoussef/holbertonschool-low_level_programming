@@ -15,8 +15,8 @@ for (left_digit = 0 ; left_digit <= 8 ; left_digit++)
 {
 for (right_digit = left_digit + 1; right_digit <= 9; right_digit++)
 {
-putchar((left_digit % 10) + '0');
-putchar((right_digit % 10) + '0');
+putchar (left_digit + '0');
+putchar (right_digit + '0');
 if (left_digit != 8 || right_digit != 9)
 {
 putchar (',');
@@ -24,6 +24,7 @@ putchar (' ');
 }
 }
 }
+putchar('\n');
 return (0);
 }
 
