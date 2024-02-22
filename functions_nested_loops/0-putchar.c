@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: 'print combo '
+ * Description: 'putchar '
  *
  * Return: Always 0 (Success)
  */
