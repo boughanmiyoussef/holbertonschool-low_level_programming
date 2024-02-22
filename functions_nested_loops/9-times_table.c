@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * times_table - Prints the  times table.
+ * times_table - Prints times table.
  */
-void times_table(void)
+void times_table(void) 
 {
 int row, column, x;
 for (row = 0; row <= 9; row++)
@@ -14,14 +14,8 @@ if (column > 0)
 {
 _putchar(',');
 _putchar(' ');
-if (x < 10)
-{
-_putchar(' ');
 }
-_putchar(' ');
-}
-if (x >= 10)
-{
+if (x >= 10) {
 _putchar((x / 10) + '0');
 }
 else
