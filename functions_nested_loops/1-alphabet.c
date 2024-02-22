@@ -2,10 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: 'This function prints the lowercase alphabet characters
- *              from 'a' to 'z', each followed by a new line.'
- *
- * Return: Always 0 (Success)
+ * Description: 'putchar'
  */
 void print_alphabet(void)
 {
