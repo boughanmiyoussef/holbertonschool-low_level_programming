@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * jack_bauer - Prints every minute .
- * @n: The number whose last digit is to be printed.
  * Return: The value of the last digit.
  */
 void jack_bauer(void)
