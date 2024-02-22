@@ -2,7 +2,8 @@
 /**
  * main - Entry point
  *
- * Description: putchar.
+ * Description: This function prints the lowercase alphabet characters
+ *              from 'a' to 'z', each followed by a new line.
  */
 void print_alphabet(void)
 {
