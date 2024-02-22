@@ -13,6 +13,7 @@ x = row * column;
 if (column > 0)
 {
 _putchar(',');
+_putchar(' ');
 if (x < 10)
 {
 _putchar(' ');
