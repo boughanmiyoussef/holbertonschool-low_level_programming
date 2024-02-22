@@ -2,9 +2,10 @@
 /**
  * jack_bauer - Prints every minute .
  * @n: The number whose last digit is to be printed.
- *  Return: The value of the last digit.
+ * Return: The value of the last digit.
  */
-void jack_bauer(void) {
+void jack_bauer(void)
+{
 int hour, minute;
 for (hour = 0; hour < 24; hour++)
 {
