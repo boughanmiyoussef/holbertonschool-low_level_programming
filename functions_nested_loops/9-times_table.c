@@ -23,5 +23,5 @@ _putchar(' ');
 _putchar((x % 10) + '0');
 }
 _putchar('\n');
-    }
+}
 }
