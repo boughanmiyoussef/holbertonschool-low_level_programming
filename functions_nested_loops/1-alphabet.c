@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: 'putchar'
+ * Description: putchar.
  */
 void print_alphabet(void)
 {
