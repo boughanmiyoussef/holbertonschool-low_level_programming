@@ -9,13 +9,13 @@ for (row = 0; row <= 9; row++)
 {
 for (column = 0; column <= 9; column++)
 {
-x= row * column;
+x = row * column;
 if (column > 0)
 {
 _putchar(',');
-if (x < 10) 
+if (x < 10)
 {
- _putchar(' ');
+_putchar(' ');
 }
 _putchar(' ');
 }
