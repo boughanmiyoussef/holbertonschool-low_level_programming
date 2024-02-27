@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - entry point
+ * Description: Fizz Buzz
+ * Return: always zero success
+*/
 int main(void)
 {
 int i;
