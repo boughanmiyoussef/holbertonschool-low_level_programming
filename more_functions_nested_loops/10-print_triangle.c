@@ -8,19 +8,18 @@
 */
 void print_triangle(int size)
 {
-    int lines;
-    int columns;
-
-    if (size <= 0)
-    {
-        _putchar('\n');
-    }
-    else
-    {
-        for (lines = 1; lines <= size; lines++)
-        {
-            for (columns = 0; columns < size; columns++)
-            {
+int lines;
+int columns;
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
+for (lines = 1; lines <= size; lines++)
+{
+for (columns = 0; columns < size; columns++)
+{
 if (columns < size - lines)
 {
 _putchar(' ');
@@ -32,5 +31,5 @@ _putchar('#');
 }
 _putchar('\n');
 }
-}                             
+}
 }
