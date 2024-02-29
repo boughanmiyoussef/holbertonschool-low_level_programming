@@ -3,18 +3,14 @@
  * _strlen - entry point
  * Description: return the length
  * @s: the character
- * Return: succeess
+ * Return: success
 */
-
-
-
-
 int _strlen(char *s)
 { 
-    int length = 0;
-    for (; *s != '\0' ; s++ )
-    {
-        length++;
-    }
-    return (length);
+int length = 0;
+for (; *s != '\0' ; s++ )
+{
+length++;
+}
+return (length);
 }
