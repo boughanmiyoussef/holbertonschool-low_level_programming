@@ -17,5 +17,5 @@ for (j = 0; j < len / 2; j++)
 temp = s[j];
 s[j] = s[len - j - 1];
 s[len - j - 1] = temp;
- }
+}
 }
