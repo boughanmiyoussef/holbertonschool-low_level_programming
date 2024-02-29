@@ -5,16 +5,18 @@
  * @s: the character
  * 
 */
-
 void print_rev(char *s)
 {
-int i;
-while ( s[i] !='\0' )
-{
-i++;
+int length = 0;
+    while (*s != '\0')
+    {
+        length++;
+        s++;
+    }
+for (int i = length - 1; i >= 0; i--)
+    {
+    printf("%c", *(s + i));
+    }
+    printf("\n");
 }
-for (i -= 1; i >= 0; i-- )
-{
-_putchar(s[i]);
-}
-}
+
