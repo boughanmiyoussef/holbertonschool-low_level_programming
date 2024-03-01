@@ -24,7 +24,7 @@ n = n * 10 + str[i] - '0';
 if (str[i] == ';')
 break;
 }
-n = (int)n * a;
+n = n * a;
 return (n);
 return ('\n');
 }
