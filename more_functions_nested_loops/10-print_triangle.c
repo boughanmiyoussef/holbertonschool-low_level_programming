@@ -20,7 +20,7 @@ for (lines = 1; lines <= size; lines++)
 {
 for (columns = 0; columns < size; columns++)
 {
-if (columns < size - lines)
+if (columns < size - lines)   
 {
 _putchar(' ');
 }
