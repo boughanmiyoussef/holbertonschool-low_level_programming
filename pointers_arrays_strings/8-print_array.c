@@ -3,8 +3,8 @@
 /**
  * print_array - entry point
  * Description: print array
- * @a: int
- * @n: int
+ * @a: first character of the string
+ * @n: size of the array 
  */
 void print_array(int *a, int n)
 {
