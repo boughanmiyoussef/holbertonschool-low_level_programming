@@ -8,20 +8,18 @@
  */
 int _atoi(char *str)
 {
-int n = 0;
-unsigned int a = 1;
+unsigned int n = 0;
+int a = 1;
 int i; 
 for(i = 0; str[i] != '\0'; i++)
 {
 if (str[i] == '-')
 {
 a *= -1;
-
 }
 if (str[i] >= '0' && str[i] <= '9')
 {
 n = n * 10 + str[i] - '0';
-
 }
 if (str[i] == ';')
 break;
