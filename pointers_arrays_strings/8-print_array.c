@@ -4,7 +4,7 @@
  * print_array - entry point
  * Description: print array
  * @a: first character of the string
- * @n: size of the array 
+ * @n: size of the array
  */
 void print_array(int *a, int n)
 {
