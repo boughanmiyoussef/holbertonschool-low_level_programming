@@ -10,8 +10,8 @@ int _atoi(char *str)
 {
 unsigned int n = 0;
 int a = 1;
-int i; 
-for(i = 0; str[i] != '\0'; i++)
+int i;
+for (i = 0; str[i] != '\0'; i++)
 {
 if (str[i] == '-')
 {
