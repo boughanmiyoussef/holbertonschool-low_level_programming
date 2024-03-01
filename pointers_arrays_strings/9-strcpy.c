@@ -3,8 +3,8 @@
 /**
  * *_strcpy - entry point
  * Description: that copies the string pointed to by src.
- * @dest: variable
- * @src: string 
+ * @dest: destination
+ * @src: string
  * Return:  dest
  */
 
