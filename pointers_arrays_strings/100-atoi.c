@@ -28,4 +28,5 @@ break;
 }
 n = n * a;
 return (n);
+return ('\n');
 }
