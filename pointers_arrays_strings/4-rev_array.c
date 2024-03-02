@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * reverse_array - entry point
- * @a: array 
+ * @a: array
  * @n: number
  */
 void reverse_array(int *a, int n)
