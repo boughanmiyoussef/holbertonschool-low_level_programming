@@ -4,7 +4,7 @@
  * _strncpy - entry point
  * @dest: string
  * @src: string
- * @n: number 
+ * @n: number
  *
  * Return: success
  */
