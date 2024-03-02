@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcat - enrty point
- * @dest: string 
- * @src: string 
+ * @dest: string
+ * @src: string
  *
  * Return: success
  */
