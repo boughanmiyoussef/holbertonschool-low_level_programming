@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * *_strstr - entry point
+ * _strstr - entry point
  * @s: first parameter
  * @accept: second parameter
  * Description: locates a substring.
