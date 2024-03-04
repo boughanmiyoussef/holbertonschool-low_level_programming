@@ -2,11 +2,10 @@
 /**
  * *_strpbrk - function name
  * @s: first parameter
- * @accpet: second parameter
+ * @accept: second parameter
  * Description: searches a string for any of a set of bytes.
  * Return : success
 */
-
 char *_strpbrk(char *s, char *accept)
 {
 int i;
