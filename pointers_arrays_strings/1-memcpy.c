@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_mempcy - entry point
+ * _mempcy - entry point
  * Description: copies n bytes from memory area src to memory area dest
  * @dest: string Destination
  * @src: string to be copied
