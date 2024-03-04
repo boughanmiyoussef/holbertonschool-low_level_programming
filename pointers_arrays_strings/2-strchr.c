@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * *_strchr - entry point
  * @s: string
@@ -12,8 +13,11 @@ while (*s != '\0')
 {
 if (*s == c)
 return (s);
-s++; 
+s++;
 }
-
-return (NULL); 
+if (c == '\0')
+{
+return (s);
+}
+return (NULL);
 }
