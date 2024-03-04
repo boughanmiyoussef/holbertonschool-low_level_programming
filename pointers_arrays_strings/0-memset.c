@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * *_memset - entry point
- * @s: string 
+ * @s: string
  * @b: constant byte
  * @n: size of the memory
  * Description: fills the first n bytes of the memory area pointed to by s
