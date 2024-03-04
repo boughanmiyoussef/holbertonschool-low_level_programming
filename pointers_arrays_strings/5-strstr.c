@@ -1,25 +1,35 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
 /**
- * _strstr - entry point
- * @s: first parameter
- * @accept: second parameter
- * Description: locates a substring.
- * Return: Always Succes
-*/
+ * _strstr - Locates a substring.
+ * @haystack: string
+ * @needle: substring
+ * Return: success
+ */
 
-char *_strstr(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
- while (*s != '\0')
- {
-    const char *a = accept;
-    while (*a != '\0')
-    {
-        if ( *s == *a)
-        return (s);
-    a++;
-    }
-    s++;
- }
- return (NULL);
+int index;
+
+if (*needle == 0)
+return (haystack);
+
+while (*haystack)
+{
+index = 0;
+
+if (haystack[index] == needle[index])
+{
+do {
+if (needle[index + 1] == '\0')
+return (haystack);
+index++;
+} 
+while (haystack[index] == needle[index]);
+}
+
+haystack++;
+}
+
+return ('\0');
 }
