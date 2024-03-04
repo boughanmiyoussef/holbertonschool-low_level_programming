@@ -4,7 +4,7 @@
  * @s: first parameter
  * @accept: second parameter
  * Description: searches a string for any of a set of bytes.
- * Return : success
+ * Return: success
 */
 char *_strpbrk(char *s, char *accept)
 {
