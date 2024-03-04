@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * set_string - entry point
  * @s: integer
