@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * *_strstr - entry point
  * @s: first parameter
@@ -9,16 +10,16 @@
 
 char *_strstr(char *s, char *accept)
 {
-int i;
-while (*s)
-{
-for (i = 0; accept[i]; i++)
-{
-if (*s == accept[i])
-return(s);
-
-}
-s++;  
-}
-return('\0');
+ while (*s != '\0')
+ {
+    const char *a = accept;
+    while (*a != '\0')
+    {
+        if ( *s == *a)
+        return (s);
+    a++;
+    }
+    s++;
+ }
+ return (NULL);
 }
