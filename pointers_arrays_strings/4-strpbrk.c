@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strpbrk - function name
+ * _strpbrk - function name
  * @s: first parameter
  * @accept: second parameter
  * Description: searches a string for any of a set of bytes.
