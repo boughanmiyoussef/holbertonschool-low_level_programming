@@ -15,3 +15,12 @@ for (i = size - 1; i < (size * size - 1); i += size - 1)
 sumy += a[i];
 printf("%d, %d\n", sumx, sumy);
 }
+
+
+
+i = i + size + 1;
+
+i = 0 + size + 1
+
+i = 0 + size + 1
+
