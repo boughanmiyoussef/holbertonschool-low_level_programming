@@ -22,7 +22,7 @@ return (prime(a, b + 1));
 
 /**
  * is_prime_number - function name
- * Description: returns 1 if the input integer is a prime number, otherwise return 0.
+ * Description: returns 1 if it is a prime number, otherwise return 0.
  * @n: number
  * Return: success
 */
