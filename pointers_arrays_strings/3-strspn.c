@@ -17,6 +17,6 @@ for (j = 0; s[i] != accept[j]; j++)
 if (accept[j] == '\0')
 return (i);
 }
-}
+}2
 return (0);
 }
