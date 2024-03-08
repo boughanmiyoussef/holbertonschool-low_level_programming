@@ -23,6 +23,6 @@ return (1);
 }
 sum += atoi(argv[number]);
 }
-printf ("%d\n", sum);
-return(0);
+printf("%d\n", sum);
+return (0);
 }
