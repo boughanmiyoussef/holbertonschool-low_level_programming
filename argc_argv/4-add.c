@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * main - entry point   
+ * main - entry point
  * @argc: argument counter
- * @argv: argument vector 
+ * @argv: argument vector
  * Return: 0
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 int number, digit;
 int sum = 0;
@@ -21,8 +21,8 @@ printf("Error\n");
 return (1);
 }
 }
-sum +=atoi(argv[number]);
+sum + = atoi(argv[number]);
 }
-printf("%d\n", sum);
+printf ("%d\n", sum);
 return(0);
 }
