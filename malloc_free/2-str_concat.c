@@ -11,17 +11,17 @@ char *str_concat(char *s1, char *s2)
 {
 int abc = 0;
 int def = 0;
-while (*(dest + abc) != '\0')
+while (*(s1 + abc) != '\0')
 {
 abc++;
 }
 while (def >= 0)
 {
-*(dest + abc) = *(src + def);
+*(s1 + abc) = *(src + def);
 if (*(src + def ) == '\0')
 break;
 abc;
 def;
 }
-return(dest)
+return(s1)
 }
