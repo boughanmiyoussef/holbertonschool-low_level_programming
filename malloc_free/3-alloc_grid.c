@@ -33,7 +33,7 @@ free(abc);
 return (NULL);
 }
 }
-	
+
 for (x = 0; x < height; x++)
 for (y = 0; y < width; y++)
 abc[x][y] = 0;
