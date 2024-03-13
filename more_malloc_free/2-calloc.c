@@ -19,13 +19,13 @@ return (NULL);
 abc = malloc(nmemb * size);
 if (abc == NULL)
 return (NULL);
-	
+
 i = 0;
 while (i < nmemb * size)
 {
 abc[i] = 0;
 i++;
 }
-	
+
 return (abc);
 }
