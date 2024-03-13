@@ -22,13 +22,13 @@ c = 0;
 
 if (s1 == NULL)
 s1 = "";
-	
+
 if (s2 == NULL)
 s2 = "";
 
 while (s1[a])
 a += 1;
-	
+
 youssef = malloc(a + n + 1);
 if (youssef == NULL)
 return (NULL);
