@@ -23,9 +23,9 @@ size = max - min + 1;
 abc = malloc(sizeof(int) * size);
 if (abc == NULL)
 return (NULL);
-	
+
 for (i = 0; i < size; i += 1)
 abc[i] = min + i;
-	
+
 return (abc);
 }
