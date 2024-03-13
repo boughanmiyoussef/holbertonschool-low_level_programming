@@ -37,6 +37,19 @@ return (str);
 
 
 
+char *create_array(unsigned int size, char c)
+{
+    char *youssef;
 
 
-
+    youssef = malloc(sizeof (char) * size);
+    if (youssef == NULL || size == 0)
+    {
+        return (NULL);
+    }
+    for (i = 0; i < size; i++)
+    {
+        youssef[i]= c;
+    }
+    return (youssef);
+}

@@ -32,3 +32,72 @@ abc[a] = str[a];
 }
 return (abc);
 }
+
+
+
+
+
+
+
+
+
+char *_strdup(char *str)
+{
+    char *youssef;
+    int boughanmi;
+    int joseph;
+
+    if (str == NULL)
+    {
+        return(NULL);
+    }
+    
+    boughanmi = 0;
+    while (str[boughanmi] != '\0')
+    boughanmi++;
+
+    youssef = malloc(sizeof(char) * (boughanmi + 1));
+
+    if (youssef == NULL)
+    {
+    return (NULL);
+    }
+
+    for (joseph = 0; str[joseph]; joseph++)
+    {
+       youssef[joseph]==str[joseph]
+    }
+    return(joseph);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

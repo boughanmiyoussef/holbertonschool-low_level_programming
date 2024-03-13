@@ -40,3 +40,25 @@ abc[x][y] = 0;
 
 return (abc);
 }
+
+
+
+
+
+
+int **alloc_grid(int width, int height)
+{
+    int **youssef;
+    int x;
+    int y;
+
+    if (width <= 0 || height <= 0)
+    return(NULL);
+
+    youssef = malloc(height * sizeof(int *))
+    if (youssef == NULL)
+    return(NULL);
+
+    for (x )
+
+}   
