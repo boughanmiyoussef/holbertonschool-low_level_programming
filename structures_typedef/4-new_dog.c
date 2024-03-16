@@ -9,24 +9,25 @@
  */
 char *_strdup(char *str)
 {
-	char *abc;
-	unsigned int length = 0;
+char *abc;
+unsigned int length = 0;
 
-	if (str)
-	{
-		while (str[length++])
-			;
+if (str)
+{
+while (str[length++])
+;
 
-		abc = malloc(sizeof(char) * length);
-		if (abc)
-		{
-			while (length--)
-				abc[length] = str[length];
+abc = malloc(sizeof(char) * length);
+if (abc)
+{
+			
+while (length--)
+abc[length] = str[length];
 
-			return (abc);
-		}
-	}
-	return (NULL);
+return (abc);
+}
+}
+return (NULL);
 }
 
 /**
@@ -39,38 +40,38 @@ char *_strdup(char *str)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d;
+dog_t *d;
 
-	d = malloc(sizeof(dog_t));
-	if (!d)
-		return (NULL);
+d = malloc(sizeof(dog_t));
+if (!d)
+return (NULL);
 
-	if (name)
-	{
-		d->name = _strdup(name);
-		if (!(d->name))
-		{
-			free(d);
-			return (NULL);
-		}
-	}
-	else
-		d->name = NULL;
+if (name)
+{
+d->name = _strdup(name);
+if (!(d->name))
+{
+free(d);
+return (NULL);
+}
+}
+else
+d->name = NULL;
 
-	d->age = age;
+d->age = age;
 
-	if (owner)
-	{
-		d->owner = _strdup(owner);
-		if (!(d->owner))
-		{
-			free(d->name);
-			free(d);
-			return (NULL);
-		}
-	}
-	else
-		d->owner = NULL;
+if (owner)
+{
+d->owner = _strdup(owner);
+if (!(d->owner))
+{
+free(d->name);
+free(d);
+return (NULL);
+}
+}
+else
+d->owner = NULL;
 
-	return (d);
+return (d);
 }
