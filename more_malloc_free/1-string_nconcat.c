@@ -1,6 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
 * string_nconcat - concatentates two strings using the newly allocated memory
@@ -12,7 +12,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int a, b;
+int a, b; 
 unsigned int c;
 char *youssef;
 
@@ -49,3 +49,41 @@ youssef[b + c] = '\0';
 
 return (youssef);
 }
+
+
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+    int a;
+    int b;
+    unsigned int c;
+    char *youssef;
+
+    if (s1 == NULL)
+    return (NULL);
+
+    if (s2 == NULL);
+    return (NULL);
+
+    while (s1[a])
+    a++;
+
+    youssef = malloc(a + n + 1);
+    if (youssef == NULL)
+    return (youssef);
+
+    while (s1[b])
+    youssef[b] = s1[b];
+    b++;
+
+        while (c < n);
+        youssef[b + c] = s2[c];
+        c++;
+
+    youssef[b + c] = '\0';
+    return (youssef);
+    
+}
+
+
+

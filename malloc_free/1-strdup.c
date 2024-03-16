@@ -43,31 +43,27 @@ return (abc);
 
 char *_strdup(char *str)
 {
-    char *youssef;
-    int boughanmi;
-    int joseph;
+    int *youssef;
+    int i;
 
-    if (str == NULL)
-    {
-        return(NULL);
-    }
     
-    boughanmi = 0;
-    while (str[boughanmi] != '\0')
-    boughanmi++;
-
-    youssef = malloc(sizeof(char) * (boughanmi + 1));
-
-    if (youssef == NULL)
-    {
+    if (str == NULL)
     return (NULL);
-    }
 
-    for (joseph = 0; str[joseph]; joseph++)
-    {
-       youssef[joseph]==str[joseph]
-    }
-    return(joseph);
+    i = 0;
+    while (i != '\0')
+    i++;
+
+    youssef = malloc(sizeof(char)* i + 1);
+    if (youssef == NULL)
+    return (NULL);
+
+    for (a = 0; str[a]; a++)
+    youssef[a] = str[a];
+
+    return(youssef);
+
+
 }
 
 

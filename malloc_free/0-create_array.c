@@ -39,17 +39,20 @@ return (str);
 
 char *create_array(unsigned int size, char c)
 {
+
     char *youssef;
+    unsigned int i;
 
+    youssef = malloc(sizeof(char) * size);
+    if (youssef == NULL || size == NULL)
+    return (NULL);
 
-    youssef = malloc(sizeof (char) * size);
-    if (youssef == NULL || size == 0)
-    {
-        return (NULL);
-    }
     for (i = 0; i < size; i++)
-    {
-        youssef[i]= c;
-    }
+    youssef[i] = c;
+
+
     return (youssef);
+
+
+
 }

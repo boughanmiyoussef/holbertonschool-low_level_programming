@@ -48,17 +48,32 @@ return (abc);
 
 int **alloc_grid(int width, int height)
 {
-    int **youssef;
-    int x;
-    int y;
+ char **youssef;
+ int x;
 
-    if (width <= 0 || height <= 0)
-    return(NULL);
+ if (width <= 0 || height <= 0)
+ return (NULL);
 
-    youssef = malloc(height * sizeof(int *))
-    if (youssef == NULL)
-    return(NULL);
+ youssef = malloc(height * sizeof(char *));
+ if (youssef ==  NULL)
+ return (NULL);
 
-    for (x )
+    for (x = 0; x < height; x++)
+    {
+        youssef[x] = malloc(width * sizeof(char));
+        if (youssef == NULL)
+        {
+            while(x--)
+            free(youssef);
+            free(youssef[x]);
+            return (NULL);
+        }
+    }
+        for (x = 0; x < height; x++)
+        for (y = 0; y < width; y++)
+        youssef[x][y] = 0;
 
-}   
+    
+    return (youssef);
+}
+
