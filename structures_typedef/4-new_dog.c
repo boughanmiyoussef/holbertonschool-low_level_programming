@@ -20,7 +20,7 @@ while (str[length++])
 abc = malloc(sizeof(char) * length);
 if (abc)
 {
-			
+
 while (length--)
 abc[length] = str[length];
 
