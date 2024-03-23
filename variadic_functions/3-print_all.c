@@ -1,58 +1,53 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stddef.h>
 #include <stdarg.h>
 
 /**
- * print_all - function name
- * @format: constant pointer to constant string
- *
- * Return: void
- */
+* print_all - function with 2 parameter
+* @format: char type pointer to string
+*
+* Description: prints anything followed by a new line
+* Return: void
+*/
 void print_all(const char * const format, ...)
 {
-int i, flag;
+int j;
 char *str;
-va_list argList;
+char *space;
+va_list ap;
 
-va_start(argList, format);
-i = 0;
+va_start(ap, format);
+j = 0;
+while (format && format[j])
+{
+space = "";
+if (format[j + 1])
+space = ", ";
+switch (format[j])
+{
 
-while (format[i])
-{
-flag = 0;
-	
-switch (format[i])
-{
-case ('c'):
-printf("%c", va_arg(argList, int));
-flag = 1;
+case 'c':
+printf("%c%s", va_arg(ap, int), space);
 break;
-	
-case ('i'):
-printf("%i", va_arg(argList, int));
-flag = 1;
+
+case 'i':
+printf("%d%s", va_arg(ap, int), space);
 break;
-	
-case ('f'):
-printf("%f", va_arg(argList, double));
-flag = 1;
+
+case 'f':
+printf("%f%s", va_arg(ap, double), space);
 break;
-	
-case ('s'):
-str = va_arg(argList, char *);
-		
-if (str == NULL)
+
+case 's':
+str = va_arg(ap, char *);
+
+if (!str || !*str)
 str = "(nil)";
-printf("%s", str);
-flag = 1;
+printf("%s%s", str, space);
 break;
-}
-	
-if (format[i + 1] && flag)
-printf(", ");
-i++;
-}
 
+}
+j++;
+}
 printf("\n");
 }
