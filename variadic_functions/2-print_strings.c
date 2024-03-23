@@ -26,7 +26,7 @@ printf("%s", va_arg(list, char *));
 for (i = 1; i < n; i++)
 {
 ptr = va_arg(list, char*);
-	
+
 if (ptr == NULL)
 ptr = "(nil)";
 printf("%s%s", sep, ptr);
