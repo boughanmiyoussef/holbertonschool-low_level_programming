@@ -11,6 +11,7 @@
 int my_string_printer(va_list args)
 {
 int i;
+
 int j = 0;
 	
 char *str = va_arg(args, char *);
