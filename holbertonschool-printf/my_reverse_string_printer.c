@@ -12,7 +12,7 @@ char *s = va_arg(args, char *);
 
 if (!s)
 s = "(null)";
-	
+
 while (s[i])
 {
 i++;
