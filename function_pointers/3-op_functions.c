@@ -14,7 +14,7 @@ return (a + b);
 
 /**
  * op_sub - subtraction operator
- * @a: first in
+ * @a: int
  * @b: int
  * Return: difference of 2 numbers
  */
