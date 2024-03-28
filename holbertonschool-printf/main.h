@@ -13,7 +13,7 @@
 typedef struct ConversionHandler
 {
 char specifier;
-int (*handler)(va_list);
+int (*f)(va_list);
 } ConversionHandler_t;
 
 int _printf(const char *format, ...);
