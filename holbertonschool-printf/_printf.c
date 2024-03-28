@@ -1,15 +1,15 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _printf - Emulate the original.
+ * _printf - function name.
  *
- * @format: Format by specifier.
+ * @format: Format of specifier.
  *
- * Return: count of chars.
+ * Return: int.
  */
 int _printf(const char *format, ...)
 {
-    
+
 int i = 0, count = 0, j;
 va_list args;
 
