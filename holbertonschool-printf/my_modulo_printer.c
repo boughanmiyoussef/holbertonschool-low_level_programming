@@ -7,12 +7,12 @@
  *
  * Return: number of characters.
  */
-
-
+ 
 int my_modulo_printer(va_list args)
 {
 (void)args;
 _putchar('%');
+
 
 return (1);
 }
