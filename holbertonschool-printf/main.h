@@ -5,21 +5,19 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-
 /**
  * ConversionHandler - Struct for format
- * @specifiers: Struct format
+ * @specifiers: Conversion specifiers
  * @f: The function associated
  */
-
 typedef struct ConversionHandler
 {
-char specifiers;
-int (*f)(va_list);
+char specifier;
+int (*handler)(va_list);
 } ConversionHandler_t;
 
 int _printf(const char *format, ...);
-int get_function(char s, va_list args);
+int handle_specifier(char format_specifier, va_list args);
 int _putchar(char c);
 int my_char_printer(va_list args);
 int my_string_printer(va_list args);

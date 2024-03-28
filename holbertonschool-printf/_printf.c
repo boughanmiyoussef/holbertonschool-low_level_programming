@@ -9,6 +9,7 @@
  */
 int _printf(const char *format, ...)
 {
+    
 int i = 0, count = 0, j;
 va_list args;
 
@@ -29,7 +30,7 @@ if (!format[i + 1] || (format[i + 1] == ' ' && !format[i + 2]))
 count = -1;
 break;
 }
-j += get_function(format[i + 1], args);
+j += handle_specifier(format[i + 1], args);
 if (j == 0)
 count += _putchar(format[i + 1]);
 	
