@@ -20,6 +20,7 @@ format_t conversion[] = {
 {'r', my_reverse_string_printer},
 {0, NULL}
 
+
 };
 
 while (conversion[i].format)
