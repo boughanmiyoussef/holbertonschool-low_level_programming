@@ -4,8 +4,8 @@
 /**
  * add_node_end - function name
  * @head: pointer to pointer to head of list
- * @str: string to initialize node 
- * Return: address of new node, or NULL if malloc failed
+ * @str: string to initialize node
+ * Return: address of new node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -18,7 +18,7 @@ return (NULL);
 	
 abc->next = NULL;
 abc->str = strdup(str);
-	
+
 if (abc->str)
 while (str[i])
 ++i;
@@ -30,7 +30,7 @@ while (xyz->next)
 xyz = xyz->next;
 xyz->next = abc;
 }
-	
+
 else
 *head = abc;
 return (abc);
