@@ -2,22 +2,22 @@
 
 /**
  * print_listint - function name
- * @h: the head of the list
- * Return: number of nodes
+ * @h: pointer to the head
+= * Return: amount of nodes in the list
  */
+
 size_t print_listint(const listint_t *h)
 {
-size_t nodes = 0;
+size_t count = 1;
 
-if (!h)
-return (0);
-
-while (h)
+if (h)
 {
 printf("%i\n", h->n);
-nodes++;
-h = h->next;
+if (h->next)
+count += print_listint(h->next);
+
+return (count);
 }
-	
-return (nodes);
+else
+return (0);
 }
