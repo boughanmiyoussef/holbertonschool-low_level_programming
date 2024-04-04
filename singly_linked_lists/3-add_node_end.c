@@ -15,7 +15,7 @@ list_t *abc = malloc(sizeof(list_t));
 
 if (abc == NULL)
 return (NULL);
-	
+
 abc->next = NULL;
 abc->str = strdup(str);
 
