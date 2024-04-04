@@ -14,14 +14,14 @@ list_t *abc = malloc(sizeof(list_t));
 
 if (abc == NULL)
 return (NULL);
-	
+
 abc->next = *head;
 abc->str = strdup(str);
-	
+
 if (abc->str)
 while (abc->str[i])
 ++i;
-	
+
 abc->len = i;
 *head = abc;
 return (abc);
