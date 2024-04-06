@@ -2,30 +2,32 @@
 
 /**
  * append_text_to_file - function name
- * @filename: A pointer to the name of the file
- * @text_content: The string to add to the end of the file.
- * Return: success
+ * @filename: variable pointer
+ * @text_content: content file
+ * Description: function that appends text at the end of a file
+ * Return: 1 on success, -1 on failure
  */
+
 int append_text_to_file(const char *filename, char *text_content)
 {
-int abc, def, len = 0;
+int i = 0, abc;
 
 if (filename == NULL)
 return (-1);
 
-if (text_content != NULL)
+if (text_content == NULL)
+text_content = "";
+
+while (text_content[i] != '\0')
 {
-for (len = 0; text_content[len];)
-len++;
+i++;
 }
-
 abc = open(filename, O_WRONLY | O_APPEND);
-def = write(abc, text_content, len);
 
-if (abc == -1 || def == -1)
+if (abc == -1)
 return (-1);
 
-close(abc);
+write(abc, text_content, i);
 
 return (1);
 }

@@ -3,10 +3,9 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
- * @ac: Number of command-line arguments
- * @av: Array of command-line arguments
- * Return: Always 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
 int main(int ac, char **av)
 {
@@ -18,6 +17,6 @@ int main(int ac, char **av)
         exit(1);
     }
     res = create_file(av[1], av[2]);
-    printf("-> %i\n", res);
+    printf("-> %i)\n", res);
     return (0);
 }
