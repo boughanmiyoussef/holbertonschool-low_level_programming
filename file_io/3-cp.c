@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-int start= 0, start = 0, to_count = 0;
+int start= 0, end = 0, to_count = 0;
 char buffer[1024];
 int size = 1024;
 
@@ -21,8 +21,8 @@ dprintf(STDERR_FILENO,
 exit(97);
 }
 
-start = open(argv[1], O_RDONLY);
-if (start == 1)
+end = open(argv[1], O_RDONLY);
+if (end == 1)
 {
 dprintf(STDERR_FILENO,
 "Error: Can't read start file %s\n", argv[1]);
@@ -39,7 +39,7 @@ exit(99);
 
 while (size == 1024)
 {
-size = read(start, buffer, 1024);
+size = read(end, buffer, 1024);
 if (size == -1)
 {
 dprintf(STDERR_FILENO,
@@ -57,7 +57,7 @@ exit(99);
 
 if (close(start)  == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", start);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", end);
 exit(100);
 }
 if (close(to) == -1)
