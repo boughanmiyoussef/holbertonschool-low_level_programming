@@ -16,7 +16,7 @@ first = *head;
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
-	
+
 if (*head == NULL)
 {
 new->next = NULL;
