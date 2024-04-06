@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * insert_dnodeint_at_index - function name
- * @h: Pointer 
+ * @h: Pointer
  * @n: integer
  * @idx: Position
  * Return: The direction of the new node
