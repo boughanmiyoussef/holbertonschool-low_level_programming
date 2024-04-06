@@ -2,7 +2,7 @@
 
 /**
  * append_text_to_file - function name
- * @filename: A pointer to the name of the file.
+ * @filename: A pointer to the name of the file
  * @text_content: The string to add to the end of the file.
  * Return: success
  */
