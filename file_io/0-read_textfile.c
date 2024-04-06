@@ -1,4 +1,4 @@
-#include "mainh"
+#include "main.h"
 /**
  * read_textfile - function name
  * @filename: The file's name.
