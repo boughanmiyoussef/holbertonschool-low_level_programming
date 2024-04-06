@@ -1,30 +1,31 @@
 #include "main.h"
+
 /**
  * append_text_to_file - function name
- * @filename: The file's name.
- * @text_content: The file's content.
- * Return: 1 on sucess or -1
+ * @filename: A pointer to the name of the file.
+ * @text_content: The string to add to the end of the file.
+ * Return: success
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-int text, error = -1, size = 0;
+int abc, def, len = 0;
 
-if (filename)
+if (filename == NULL)
+return (-1);
+
+if (text_content != NULL)
 {
-text = open(filename, O_RDWR | O_APPEND);
-if (text > 0)
-{
-			
-if (text_content)
-{
-while (text_content[size] != '\0')
-size++;
-error = write(text, text_content, size);
+for (len = 0; text_content[len];)
+len++;
 }
-else
-error = 1;
-close(text);
-}
-}
-return ((error >= 0) ? 1 : -1);
+
+abc = open(filename, O_WRONLY | O_APPEND);
+def = write(abc, text_content, len);
+
+if (abc == -1 || def == -1)
+return (-1);
+
+close(abc);
+
+return (1);
 }
