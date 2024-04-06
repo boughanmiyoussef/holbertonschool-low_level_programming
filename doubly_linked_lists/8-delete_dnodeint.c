@@ -29,10 +29,10 @@ if (!index && n_element)
 {
 if (n_element->next)
 n_element->next->prev = n_element->prev;
-		
+
 if (n_element->prev)
 n_element->prev->next = n_element->next;
-	
+
 else
 *head = n_element->next;
 free(n_element);
