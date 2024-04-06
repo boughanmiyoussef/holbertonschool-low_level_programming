@@ -1,35 +1,30 @@
 #include "main.h"
 /**
- * append_text_to_file - Function name
- * @filename: Is the file to read
- * @text_content: the text
- * Return: The letters and the status
+ * append_text_to_file - function name
+ * @filename: The file's name.
+ * @text_content: The file's content.
+ * Return: 1 on sucess or -1
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
+int text, error = -1, size = 0;
 
-int abc, def, i = 0;
-
-if (filename == NULL)
-return (-1);
-
-if (text_content == NULL)
-text_content = "";
-
-while (text_content[i] != 0)
-i++;
-
-abc = open(filename, O_WRONLY | O_CREAT | O_APPEND);
-
-if (abc == -1)
-return (-1);
-
-def = write(abc, text_content, i);
-
-if (def == -1)
-return (-1);
-
-close(abc);
-
-return (1);
+if (filename)
+{
+text = open(filename, O_RDWR | O_APPEND);
+if (text > 0)
+{
+			
+if (text_content)
+{
+while (text_content[size] != '\0')
+size++;
+error = write(text, text_content, size);
+}
+else
+error = 1;
+close(text);
+}
+}
+return ((error >= 0) ? 1 : -1);
 }
